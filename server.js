@@ -12,8 +12,10 @@ server.use(logger);
 server.use("/api/user", userRouter);
 server.use("/api/post", postRouter);
 
+const message = process.env.MESSAGE;
+
 server.get("/", (req, res) => {
-  res.send(`<h2>Let's write some middleware!</h2>`);
+  res.send(`<h2>${message}/h2>`);
 });
 
 //custom middleware
