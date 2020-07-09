@@ -15,7 +15,7 @@ server.use("/api/post", postRouter);
 const message = process.env.MESSAGE;
 
 server.get("/", (req, res) => {
-  res.send(`<h2>${message}/h2>`);
+  res.send(`<h2>api-node3-project/h2>`);
 });
 
 //custom middleware
